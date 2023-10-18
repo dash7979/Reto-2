@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .fondo__diagonal {
+    position: absolute;
+    top: -120px;
+    height: 300px;
+    z-index: -1;
+    width: 100%;
+    background: linear-gradient(70deg, blue, pink);
+    transform: skewY(-10deg);
+  }
+  
+  .menu__mobile {
+    width: 30px;
+  }
+  
+  .imagen__skipe {
+    margin: 10px;
+  }
+  
+  .menu__hamburguesa {
+    grid-column: 8;
+  }
+  
+  .menu__hamburguesa > button {
+    background-color: rgba(250, 250, 250, 0.25);
+    border-radius: 20px;
+    width: 50px;
+    height: 30px;
+    border: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lineas {
+    width: 18px;
+    height: 2px;
+    background-color: white;
+    margin: 1px 0;
+  }
+  
+  .barra {
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr) 2fr 2fr;
+    grid-row: 10px;
+    grid-area: 2 / 1 / 2 / 4;
+    place-items: center;
+    list-style: none;
+    margin: 5px 15px;
+  }
+  
+  .barra__opciones {
+    display: none;
+  }
+  
+  .main {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .contenedor1 {
+    padding: 16px;
+    font-style: "Anek Telugu", sans-serif;
+  }
+  
+  .titulo__principal {
+    font-size: 40px;
+    margin: 0 5px;
+    font-family: "Anek Telugu", sans-serif;
+  }
+  
+  .hero__phone {
+    display: none;
+  }
+  
+  .parrafo1 {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 16px;
+  }
+  
+  .botones {
+    column-count: 2;
+    column-gap: 30px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-spacing: 16px;
+  }
+  
+  .boton__start {
+    background-color: #0a2540;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 14px;
+    letter-spacing: 1.25px;
+    padding: 8px 16px;
+  }
+  
+  .boton__contact {
+    display: flex;
+    background-color: white;
+    color: #7000ff;
+    border: none;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    padding-top: 16px;
+    padding: 8px;
+  }
+  
+  .iconos {
+    width: 100%;
+  }
+  
+  .lista__iconos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-collapse: separate;
+    list-style: none;
+    grid-row-gap: 1em;
+    margin: 64px 0;
+  }
+  
+  .contenedor__seccion2 {
+    background-color: #f7f9fc;
+  }
+  
+  .seccion2 {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    padding: 16px;
+  }
+  
+  .subtitulo__seccion2 {
+    color: #6962f7;
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 16px 0;
+  }
+  
+  .titulo__seccion2 {
+    font-size: 32px;
+    margin: 0 px;
+    font-family: "Anek Telugu", sans-serif;
+    display: flex;
+    justify-content: left;
+    margin-block-end: 16px;
+    line-height: 1.5em;
+  }
+  
+  .parrafo__seccion2 {
+    line-height: 1.5em;
+    font-size: 0.9em;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    font-weight: 540;
+  }
+  
+  .imagenes__seccion2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-areas:
+      "tarjeta imagenSlack imagenSlack"
+      "celular imagenSlack imagenSlack"
+      "celular tendencias tendencias";
+    grid-gap: 2rem;
+    background-color: transparent;
+    padding: 32px 16px;
+  }
+  
+  .boton__star2 {
+    background-color: #7000ff;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    margin: 16px 5px;
+    font-weight: 700;
+    width: 130px;
+  }
+  
+  .parrafo__seccion2 {
+    font-size: 18px;
+    margin: 0 5px;
+    margin-block-end: 16px;
+    line-height: 26px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  
+  .parrafo-renglon {
+    color: #6962f7;
+  }
+  
+  .imagenseccion2 {
+    width: 100%;
+  }
+  
+  .tarjeta {
+    grid-area: tarjeta;
+    border-radius: 20px;
+  }
+  
+  .imagenSlack {
+    grid-area: imagenSlack;
+    border-radius: 20px;
+    height: 100%;
+  }
+  
+  .celular {
+    grid-area: celular;
+    border-radius: 10%;
+  }
+  
+  .tendencias {
+    grid-area: tendencias;
+    border-radius: 15%;
+    height: 90%;
+  }
+  
+  .seccion3 {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .diagonal-azul {
+    position: absolute;
+    top: -50px;
+    height: 100%;
+    width: 100%;
+    background-color: #0a2540;
+    transform: skewY(-10deg);
+    z-index: -1;
+  }
+  
+  .contenedor__seccion3 {
+    padding: 16px;
+  }
+  
+  .subtitulo__seccion3 {
+    color: #00d4ff;
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .titulo__seccion3 {
+    color: #f7f9fc;
+    font-size: 32px;
+    margin: 16px 0;
+    font-family: "Anek Telugu", sans-serif;
+    display: flex;
+    justify-content: left;
+    line-height: 1.5em;
+  }
+  
+  .parrafo__seccion3 {
+    color: #f7f9fc;
+    font-size: 18px;
+    margin: 0 5px;
+    margin-block-end: 16px;
+    line-height: 26px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .boton__star3 {
+    background-color: #00d4ff;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    margin: 25px 5px;
+    font-weight: 700;
+  }
+  
+  .iconos__seccion3 {
+    height: 50px;
+    margin: 8px 0;
+  }
+  
+  .parrafos__seccion3 {
+    color: #adbdcc;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .titulos__iconos3 {
+    color: #fff;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    margin: 0 0 16px 0;
+  }
+  
+  .direccionador__seccion3 {
+    background-color: transparent;
+    color: #00d4ff;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 25px 5px;
+    font-weight: 750;
+  }
+  
+  .seccion4 {
+    padding: 16px;
+  }
+  
+  .subtitulo__seccion4 {
+    color: #6962f7;
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 16px 0;
+  }
+  
+  .titulo__seccion4 {
+    font-size: 32px;
+    margin: 16px 0;
+    font-family: "Anek Telugu", sans-serif;
+    display: flex;
+    justify-content: left;
+    line-height: 1.5em;
+  }
+  
+  .contenedor__iconos4 {
+    margin: 32px 0;
+  }
+  
+  .iconos__seccion4 {
+    height: 40px;
+    margin-bottom: 8px;
+  }
+  
+  .titulos__iconos {
+    font-family: "Roboto", sans-serif;
+    margin: 0 0 16px 0;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  .seccion4__parrafo {
+    margin: 20px 0 30px 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .seccion5 {
+    position: relative;
+  }
+  
+  .diagonal-azul5 {
+    position: absolute;
+    top: -10px;
+    height: 1000px;
+    width: 100%;
+    background-color: #0a2540;
+    transform: skewY(-10deg);
+    z-index: -1;
+  }
+  
+  .imagen__mundo {
+    opacity: 10%;
+    max-width: 844px;
+    top: 15%;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .seccion__global {
+    padding: 64px 16px;
+  }
+  
+  .subtitulo__seccion5 {
+    color: #00d4ff;
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .titulo__seccion5 {
+    color: #f7f9fc;
+    font-size: 32px;
+    margin: 16px 0;
+    font-family: "Anek Telugu", sans-serif;
+    display: flex;
+    justify-content: left;
+    line-height: 1.5em;
+  }
+  
+  .parrafo__seccion5 {
+    color: #f7f9fc;
+    font-size: 18px;
+    margin: 0 5px;
+    margin-block-end: 16px;
+    line-height: 26px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .parrafo-renglon5 {
+    color: #00d4ff;
+    margin: 16px 0;
+  }
+  
+  .indicadores__seccion5 {
+    color: #f7f9fc;
+    font-family: "Anek Telugu", sans-serif;
+    border-left: 2px solid #00d4ff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+    padding: 0 0 0 8px;
+    margin: 16px 0;
+  }
+  
+  .parrafo__indicadores5 {
+    color: #6d7a88;
+    font-size: 14px;
+    margin: 16px 0;
+    letter-spacing: 0.25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  
+  .seccion6 {
+    padding: 0 16px;
+    background-color: white;
+  }
+  
+  .subtitulo__seccion6 {
+    color: #6962f7;
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .titulos__seccion6 {
+    font-size: 32px;
+    margin: 16px 0;
+    font-family: "Anek Telugu", sans-serif;
+    display: flex;
+    justify-content: left;
+    line-height: 1.5em;
+  }
+  
+  .parrafos__seccion6 {
+    font-size: 18px;
+    margin: 0 5px;
+    margin-block-end: 16px;
+    line-height: 26px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .parrafo__renglon6 {
+    color: #6962f7;
+  }
+  
+  .boton__star6 {
+    background-color: #7000ff;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    margin: 16px 5px;
+    font-weight: 700;
+    width: 130px;
+  }
+  
+  .tarjeta__seccion6 {
+    margin: 32px 0;
+    border-radius: 20px;
+    height: 445px;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .diagonal__seccion6 {
+    background: linear-gradient(
+      101.33deg,
+      #08209a 0.76%,
+      #6563ff 33.33%,
+      #36c5f0 76.92%,
+      #83e2ff 96.96%
+    );
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -55%;
+    transform: skewY(-5deg);
+    z-index: -1;
+  }
+  
+  .avatar__femenino {
+    position: absolute;
+    left: 80px;
+    width: 75px;
+  }
+  
+  .avatar__masculino {
+    position: absolute;
+    left: 130px;
+    width: 74px;
+  }
+  
+  .texto__tarjeta6 {
+    padding: 50px 64px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .parrafo__tarjeta {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    letter-spacing: 0.25px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .titulo__tarjeta6 {
+    color: #6962f7;
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+  }
+  
+  .iconos__seccion6 {
+    height: 50px;
+    margin: 8px 0;
+  }
+  
+  .titulos__iconos6 {
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    margin: 0 0 16px 0;
+  }
+  
+  .seccion6__parrafo {
+    color: #adbdcc;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .direccionador__seccion6 {
+    background-color: transparent;
+    color: #7000ff;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 25px 5px;
+    font-weight: 750;
+  }
+  
+  .seccion7 {
+    background-color: #f7f9fc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 18px;
+    padding: 0 16px;
+    width: 100%;
+  }
+  
+  .columnas {
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+  }
+  
+  .ul {
+    list-style-type: none;
+  }
+  
+  .logo__footer {
+    margin: 0 0 16px 0;
+    width: 70px;
+  }
+  
+  .iconos__footer {
+    width: 18px;
+  }

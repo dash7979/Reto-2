@@ -1,0 +1,192 @@
+@media screen and (width>=551px) {
+    .hero__phone {
+      display: flex;
+      width: 250px;
+    }
+    .contenedor1 {
+      display: grid;
+      grid-template-columns: 3fr 3fr;
+      place-items: center;
+      margin: 0 16px;
+    }
+  
+    .lista__iconos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-collapse: separate;
+      list-style: none;
+      grid-row-gap: 1rem;
+    }
+  
+    .parrafos__seccion2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-collapse: separate;
+      list-style: none;
+      grid-row-gap: 1rem;
+    }
+  
+    .imagenes__seccion3 {
+      display: flex;
+      border-radius: 20px;
+      margin: 0 0 90px 0;
+      max-width: 470px;
+    }
+  
+    .contenedor__seccion3 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      align-items: center;
+      font-size: 18px;
+      margin: 0 5px;
+      line-height: 26px;
+      padding: 16px;
+    }
+    .contenedor__iconos4 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-collapse: separate;
+      list-style: none;
+      grid-row-gap: 1rem;
+    }
+  
+    .titulos_iconos {
+      font-weight: 400;
+    }
+  
+    .contendor__indicadores5 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-collapse: separate;
+      list-style: none;
+      grid-row-gap: 1rem;
+    }
+  
+    .seccion6 {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      border-collapse: separate;
+      list-style: none;
+      grid-gap: 1rem;
+      align-items: center;
+    }
+  
+    .imagen__mundo {
+      height: 85%;
+    }
+  
+    .tarjeta__seccion6 {
+      width: 150%;
+      max-width: 470px;
+    }
+  
+    .seccion7 {
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      border-collapse: separate;
+      list-style: none;
+      grid-gap: 1rem;
+      align-items: center;
+      padding: 45px;
+    }
+  }
+  
+  @media screen and (width >= 769px) {
+    .barra__opciones {
+      display: flex;
+      color: #fff;
+    }
+    .menu__hamburguesa {
+      display: none;
+    }
+  
+    .barra {
+      display: grid;
+      grid-template-columns: 2fr repeat(5, 1fr) 2fr;
+      grid-row: 10px;
+      grid-area: 2 / 1 / 2 / 4;
+      place-items: center;
+      list-style: none;
+      margin: 5px;
+      font-family: "Roboto", sans-serif;
+    }
+  
+    .boton__sing {
+      background: rgba(250, 250, 250, 0.259);
+      color: white;
+      border: none;
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      font-size: 16px;
+      letter-spacing: 1.25px;
+      font-weight: bold;
+      padding: 8px 16px;
+    }
+    .hero__phone {
+      width: 400px;
+    }
+    .titulo__principal {
+      font-size: 60px;
+    }
+    .parrafo1 {
+      margin: 20px 0;
+    }
+    .botones {
+      margin: 25px 0;
+    }
+    .barra__opciones {
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .fondo__diagonal {
+      top: -160px;
+      height: 420px;
+    }
+  
+    .subgrid {
+      gap: 5%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    }
+  
+    .contenedor__seccion3 {
+      margin-bottom: 50px;
+    }
+  
+    .diagonal-azul {
+      height: 105%;
+    }
+  
+    .seccion4 {
+      padding: 60px 16px;
+    }
+  
+    .contenedor__iconos4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-collapse: separate;
+      list-style: none;
+      grid-row-gap: 1rem;
+    }
+  
+    .contendor__indicadores5 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-collapse: separate;
+      list-style: none;
+      grid-gap: 1rem;
+      align-items: center;
+    }
+  
+    .columnas__seccion6 {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      border-collapse: separate;
+      list-style: none;
+      grid-gap: 1rem;
+      line-height: 26px;
+      align-items: center;
+    }
+  }
